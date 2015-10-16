@@ -1,0 +1,172 @@
+/*common part*/
+
+/*  新闻内容 链接样式  */ /*IE 7, active bug, no outline */
+a.link-blue:link {color: #3F67C0; background: none; outline: none;}   /* 蓝色 */ /* 新闻内容 */
+a.link-blue:visited {color: #6B6B6B; background: none; outline: none; text-decoration: none;}
+a.link-blue:hover {color: #D70000; outline: none; text-decoration: underline;}
+a.link-blue:active { background: none; outline: 1px dotted #000;}
+
+a.link-deepblue:link  {color: #3C4D7B; background: none; outline: none;}  /* 淡蓝色 */ /* 新闻内容 */
+a.link-deepblue:visited {color: #6B6B6B; background: none; outline: none; text-decoration: none;}
+a.link-deepblue:hover {color: #D70000; outline: none; text-decoration: underline;}
+a.link-deepblue:active { background: none; outline: 1px dotted #000;}
+
+/* 链接文字样式2 */
+a.link-dark:link  {color: #000; background: none; outline: none;}   /* 黑色 */ /* 车系名字 */
+a.link-dark:visited {color: #000; background: none; outline: none; text-decoration: none;}
+a.link-dark:hover {color: #D70000; outline: none; text-decoration: underline;}
+a.link-dark:active { background: none; text-decoration: underline; outline: 1px dotted #000;}
+
+/* 链接文字样式3：突出显示文字 */
+a.link-orange:link  {color: #FF8E42; background: none; outline: none;} /* 橙色 */  /* 高亮 */
+a.link-orange:visited {color: #6B6B6B; background: none; outline: none; text-decoration: none;}
+a.link-orange:hover {color: #FF8E42; outline: none; text-decoration: underline;}
+a.link-orange:active {background: none; text-decoration: underline; outline: 1px dotted #000;}
+
+a.link-darkblue:link  {color: #001DDC; background: none; outline: none;} /* 蓝色 */  /*  */
+a.link-darkblue:visited {color: #001DDC; background: none; outline: none; text-decoration: none;}
+a.link-darkblue:hover {color: #779AE9; outline: none; text-decoration: underline;}
+a.link-darkblue:active {background: none; text-decoration: underline; outline: 1px dotted #000;}
+
+
+/* 定位 */
+.pr{ position: relative;}
+.pa{ position: absolute;}
+.fl{ float: left;}
+.fr{ float: right;}
+
+
+/* 强制不换行 */
+.nowrap{ white-space: nowrap;}
+/* 英文字符换行 */
+.wrap{ display: table; table-layout: fixed; word-wrap: break-word;}
+/* 单行文字溢出虚点显示 */
+.ell{ text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
+
+
+/* css3圆角 */
+.css3-round5{
+  border:#ddd solid 1px;
+  -moz-border-radius:5px;
+  -khtml-border-radius:5px;
+  -webkit-border-radius:5px;
+  border-radius:5px;
+}
+
+/* 导航三角符号 */
+.triangle {
+  display:block;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  overflow:hidden;
+  border-width: 5px;
+  border-color: #fff transparent transparent;
+  border-style: solid dashed dashed;
+  position: absolute;
+  font-weight: bold;
+}
+.triangle-l{
+  border-color:transparent #fff transparent transparent;
+  border-style:dashed solid dashed dashed;
+}
+.triangle-r{
+  border-color:transparent transparent transparent #fff;
+  border-style:dashed dashed dashed solid;
+}
+.triangle-t{
+  border-color:#fff transparent transparent ;
+  border-style:solid dashed dashed ;
+}
+.triangle-b{
+  border-color:transparent transparent #fff;
+  border-style:dashed dashed solid dashed;
+}
+
+/* 通用布局  */
+.w960{width: 960px; margin:0 auto;}
+.w1000{width: 1000px; margin:0 auto;}
+.w1280{width: 1280px; margin:0 auto;}
+
+/* 通用定位  */
+.dsp-n{display:none;}
+.dsp-i{display:inline;}
+.dsp-b{display:block;}
+.dsp-ib{display:inline-block; *display: inline;*zoom:1}
+
+.vsb-h{visibility: hidden;}
+.ovf-h{overflow:hidden;}
+
+.va-m{vertical-align: middle;}
+.va-t{vertical-align: top;}
+.va-b{vertical-align:bottom;}
+
+.text-c{ text-align: center;}
+.text-l{ text-align: left;}
+.text-r{ text-align: right;}
+
+
+/* padding margin */
+.pdl-10{padding-left:10px;}
+.pdl-5{padding-left:5px;}
+.pdr-10{padding-right:10px;}
+.pdt-10{padding-top:10px;}
+.pdtb-10{padding:10px 0;}
+
+.mr-10{margin-right:10px }
+.mr-5{margin-right:5px }
+.ml-10{margin-left:10px;}
+.mr-10{margin-top:10px;}
+.mt-20{margin-top:20px;}
+.mb-10{margin-bottom:10px;}
+
+.ml-5{margin-left:10px;}
+.ml-30{margin-left:30px;}
+.mr-15{margin-right:15px;}
+.mb-30{margin-bottom:30px;}
+.mr-20{margin-right:20px;}
+.mt-15{margin-top:15px;}
+.mb-20{margin-bottom:20px;}
+.mt-30{margin-top: 30px}
+.mb-18{margin-bottom:18px;}
+.mb-50{margin-bottom:50px;}
+.mt-10{margin-top:10px;}
+.mt-50{margin-top:50px;}
+
+/*button*/
+.btn,.btn-med,.btn-sml{display: inline-block;*display:inline;*zoom:1;width: 160px;height: 50px;line-height:50px;font-size: 14px;font-family:Microsoft Yahei;background-color:#35b5eb;color:#fff;
+  border: none;-moz-border-radius:4px;-khtml-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;cursor: pointer;text-align: center;}
+.btn:hover,.btn-med:hover,.btn-sml:hover{background-color:#61d0ff;}
+.btn-med{width: 140px;height: 34px;line-height: 34px;}
+.btn-sml{width: 95px;height: 40px; line-height: 40px;}
+.btn-min{width: 80px;height: 25px; line-height:25px;-moz-border-radius:0px;-khtml-border-radius:0px;-webkit-border-radius:0px;border-radius:0px;}
+
+.btn-yellow{background-color:#ff8e42;}  /* warning: CD, 这个颜色TM是橙色的，我在下面复制了一个，改成了orange*/
+.btn-yellow:hover{background-color:#ffaf79;}
+
+.btn-orange{background-color:#ff8e42;}  /* added by CD, sprint2 Wed 11/20/2013 */
+.btn-orange:hover{background-color:#ffaf79;}
+
+.btn-green{background-color:#10965c;}
+.btn-green:hover{background-color:#2ecc71;}
+
+.btn-blue{background-color:#3f67c0;}
+.btn-blue:hover{background-color:#6e9bff;}
+
+.btn-gray{background-color:#bdc3c7;}
+.btn-gray:hover{background-color:#d0d5d8;}
+
+
+/*form*/
+form.usual{padding:0 50px;}
+form.usual p{margin:10px 0;}
+select{background: #fff;border: 1px solid #ddd}
+form.usual input,form textarea{border: 1px solid #ddd;background-color:#fff;color: #6c6c6c;padding:0 10px;font-size: 12px;}
+form.usual input{width: 240px;height: 36px;line-height: 36px;}
+form.usual input:focus,form textarea:focus{border-color:#aaa;}
+form.usual input.radiobtn,form.usual input.checkbtn{width:13px;height:13px;border:none;padding: 0;background: none;margin: 0 5px;}
+form.usual input.upfile{width: auto;height: auto;border:none;line-height:20px;padding: 0;border: 1px solid #ddd\0;*border: 1px solid #ddd;}
+form.usual input.btn{width:220px;height:50px;background: #36b5ea;font-family:Microsoft YaHei;color: #fff;font-size: 16px;border: none;cursor: pointer;-moz-border-radius:2px;-khtml-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;}
+form.usual textarea{width:300px;height: 80px;resize: none;overflow: auto;}
+/*form end*/
