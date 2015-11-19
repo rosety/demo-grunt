@@ -31,8 +31,8 @@ module.exports = function(grunt) {
         less: {
             task1:{
                 options: {
-                    compress: false,
-                    yuicompress: false
+                    compress: true,
+                    yuicompress: true
                 },
                 files: {
                     "css/style.css": "less/style.less"

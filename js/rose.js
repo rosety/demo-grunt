@@ -31,8 +31,11 @@
 	r.init=function(){
 		$(function(){
 			r.lazyloadPic();
+			wait(3000,function(){
+				$('body').append('<p>Function is ready to work.Rose Rose Rose.</p>');
+			})
 			//r.isIosapp();
-			$('body').append('<p>Function is ready to work.Rose Rose Rose.</p>');
+
 		});
 	};
 	return r.init();
